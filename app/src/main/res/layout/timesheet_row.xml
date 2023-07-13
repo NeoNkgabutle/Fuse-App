@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="4dp"
+    app:cardElevation="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/LayoutImage"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp">
+            <ImageView
+                android:id="@+id/TimesheetImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/TimesheetName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TimesheetName"
+            android:layout_toEndOf="@id/LayoutImage"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/TimesheetDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/LayoutImage"
+            android:layout_below="@id/TimesheetName"
+            android:text="Description"
+            android:maxLines="3"/>
+        <TextView
+            android:id="@+id/TimesheetCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/LayoutImage"
+            android:layout_below="@id/TimesheetDescription"
+            android:text="Category"/>
+        <TextView
+            android:id="@+id/TimesheetDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/LayoutImage"
+            android:layout_below="@id/TimesheetCategory"
+            android:text="Date"/>
+        <TextView
+            android:id="@+id/TimesheetStartTime"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/LayoutImage"
+            android:layout_below="@id/TimesheetDate"
+            android:text="Start Date"/>
+        <TextView
+            android:id="@+id/TimesheetEndTime"
+            android:layout_width="130dp"
+            android:layout_marginStart="150dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/LayoutImage"
+            android:layout_below="@id/TimesheetDate"
+            android:text="End Date"/>
+        <TextView
+            android:id="@+id/TimesheetLocation"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/LayoutImage"
+            android:layout_below="@id/TimesheetStartTime"
+            android:text="Location"/>
+        <TextView
+            android:id="@+id/TimesheetCost"
+            android:layout_width="130dp"
+            android:layout_marginStart="150dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/LayoutImage"
+            android:layout_below="@id/TimesheetStartTime"
+            android:text="Cost"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

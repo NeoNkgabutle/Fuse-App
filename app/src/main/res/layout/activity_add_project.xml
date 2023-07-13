@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homepagebac"
+    android:id="@+id/drawerLayouts"
+    tools:context=".addProject">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="90dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Timesheet"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:gravity="start"
+
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/PickPDF"
+            android:layout_width="50dp"
+            android:contentDescription="PDF Button"
+            android:layout_height="50dp"
+            android:layout_marginTop="550dp"
+            android:layout_marginLeft="245dp"
+            android:src="@drawable/baseline_file_open_24"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginBottom="85dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:orientation="vertical"
+        android:weightSum="8"
+        >
+
+        <EditText
+            android:id="@+id/ProjectName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/baseline_drive_file_rename_outline_24"
+            android:ems="10"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:hint=" Name"
+            android:inputType="textPersonName" />
+        <TextView
+            android:id="@+id/categoryPick"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint=" Category"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:drawableRight="@drawable/baseline_category_24"/>
+
+
+
+        <EditText
+            android:id="@+id/ProjectDescription"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:hint=" Description"
+            android:inputType="textPersonName"
+            android:drawableRight="@drawable/baseline_description_24"/>
+
+
+        <EditText
+            android:id="@+id/ProjectDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:hint="Select a Timesheet date"
+            android:drawableRight="@drawable/baseline_calendar_month_24"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2">
+            <EditText
+                android:id="@+id/ProjStartTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Start Time"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:drawableRight="@drawable/baseline_access_time_24"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+            <EditText
+                android:id="@+id/ProjEndTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="End Time"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/baseline_timer_off_24"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/ProjectLocation"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:ems="10"
+            android:hint="Timesheet Location"
+            android:inputType="textPersonName"
+            android:drawableRight="@drawable/baseline_add_location_24"/>
+
+
+
+        <EditText
+            android:id="@+id/ProjectRate"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="R/per Hour"
+            android:textColor="@color/black"
+            android:inputType="numberDecimal"
+            android:drawableRight="@drawable/baseline_attach_money_24"/>
+        <Button
+            android:id="@+id/buttonImage"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="10dp"
+            android:text="Upload Image" />
+
+        <Button
+            android:id="@+id/buttonProject"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="10dp"
+            android:text="ENTER" />
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_views"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/menu"
+        app:headerLayout="@layout/nav_header"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true">
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

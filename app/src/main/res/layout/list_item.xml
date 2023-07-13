@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="Picture"
+                android:textSize="20sp"
+                android:id="@+id/Image"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="80dp">
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:text="Name"
+                android:id="@+id/itemName"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginTop="2dp"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:text="Description"
+                android:id="@+id/itemDescr"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="185dp">
+            <TextView
+                android:layout_width="115dp"
+                android:layout_height="30dp"
+                android:text="ProjectDate"
+                android:id="@+id/itemProjectDate"
+
+                android:layout_marginTop="2dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:text="StartTime"
+                    android:id="@+id/itemStartTime"
+
+                    android:textSize="15sp"/>
+                <TextView
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:text="EndTime"
+                    android:id="@+id/itemEndTime"
+
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="305dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Location"
+                android:id="@+id/itemLocation"
+                android:layout_marginTop="2dp"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="Cost"
+                android:id="@+id/itemCost"
+
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
